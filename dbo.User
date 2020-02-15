@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[User] (
+    [Id]       INT             IDENTITY (1, 1) NOT NULL,
+    [UserName] NVARCHAR (50)   NOT NULL,
+    [UserPwd]  NVARCHAR (50)   NOT NULL,
+    [money]    DECIMAL (19, 4) NULL,
+    [mailbox]  NVARCHAR (50)   NULL,
+    [State]    INT             NULL,
+    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
